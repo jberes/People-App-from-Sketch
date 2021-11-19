@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "people-app-from-sketch": {
+    "people-app-2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/people-app-from-sketch",
+            "outputPath": "dist/people-app-2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -77,13 +77,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "people-app-from-sketch:build:production"
+              "browserTarget": "people-app-2:build:production"
             },
             "development": {
-              "browserTarget": "people-app-from-sketch:build:development"
+              "browserTarget": "people-app-2:build:development"
             },
             "es5": {
-              "browserTarget": "people-app-from-sketch:build:es5"
+              "browserTarget": "people-app-2:build:es5"
             }
           },
           "defaultConfiguration": "development"
@@ -91,7 +91,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "people-app-from-sketch:build"
+            "browserTarget": "people-app-2:build"
           }
         },
         "test": {
@@ -126,7 +126,7 @@
       }
     }
   },
-  "defaultProject": "people-app-from-sketch",
+  "defaultProject": "people-app-2",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }

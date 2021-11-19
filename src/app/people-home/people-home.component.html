@@ -2,7 +2,7 @@
   <igx-navbar class="navbar">
     <igx-icon font="material" [active]="true" igxNavbarAction class="icon_2">menu</igx-icon>
     <div igxNavbarTitle>Viewing David Cardale</div>
-    <igx-icon font="material" [active]="true" class="icon_1">add</igx-icon>
+    <igx-icon font="material" [active]="true" routerLink="/add-person" class="icon_1">add</igx-icon>
   </igx-navbar>
   <div class="row-layout row">
     <div class="people-list column">
@@ -51,7 +51,7 @@
         </div>
         <p class="igx-typography__body-2 gender-birthday">Gender - Birthdate</p>
       </div>
-      <button igxButton="fab" type="fab" [disabled]="false" class="edit">
+      <button igxButton="fab" type="fab" [disabled]="false" routerLink="/edit-person" class="edit">
         <igx-icon class="icon">edit</igx-icon>
       </button>
     </div>

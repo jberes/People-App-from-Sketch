@@ -11,7 +11,11 @@ html, body {
 
 @include igx-core();
 @include igx-typography();
-@include igx-light-theme($light-material-palette);
+
+$custom-palette: igx-palette(
+  $primary: #72DA67,
+  $secondary: #72DA67);
+@include igx-theme($custom-palette);
 
 body {
   background: var(--igx-surface-500);
